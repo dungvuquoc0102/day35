@@ -13,20 +13,20 @@ import Weather from "../../pages/Weather";
 import Navigation from "../layouts/Navigation";
 
 function AppRoutes() {
-    return (
-        <Router basename="/F8-Zoom-Day-35">
-            <Navigation />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/comments" element={<Comments />} />
-                <Route path="/counter" element={<Counter />} />
-                <Route path="/products" element={<Products />} />
-                <Route path="/Profile" element={<Profile />} />
-                <Route path="/todo" element={<Todo />} />
-                <Route path="/weather" element={<Weather />} />
-            </Routes>
-        </Router>
-    );
+  return (
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/comments" element={<Comments />} />
+        <Route path="/counter" element={<Counter />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/weather" element={<Weather />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default AppRoutes;
